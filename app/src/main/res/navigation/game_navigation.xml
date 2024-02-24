@@ -12,10 +12,14 @@
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/actionResultFragment"
-            app:destination="@id/resultFragment" />
+            app:destination="@id/resultFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
         <action
             android:id="@+id/actionAnswerTrue"
-            app:destination="@id/mainFragment" />
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -24,6 +28,8 @@
         tools:layout="@layout/fragment_result" >
         <action
             android:id="@+id/actionMainFragment"
-            app:destination="@id/mainFragment" />
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
 </navigation>
